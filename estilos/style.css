@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+html {
+    min-height: 100%;
+    
+}
+
+:root {
+    --verde-color: rgb(13, 73, 68);
+    --verde-light-color: rgba(46, 165, 155, 0.925);
+    --verde0-color: rgba(13, 73, 68, 0.856);
+    --verde-main-color: rgb(2, 27, 25);
+    --fundo-cards: rgba(13, 73, 68, 0.507);
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    overflow-X: hidden;
+}
+
+header {
+   background-color: rgba(0, 0, 0, 0.795);
+    height: 50vh;
+}
+
+.header0 {
+    background: url('../imagens/fundos/lingua-estrangeira_159080.jpg') no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.segundo-header {
+    background-color: var(--verde-main-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 5px 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-button {
+    cursor: pointer;
+    display: none;
+}
+.menu-button div {
+    background-color: white;
+    width: 38px;
+    height: 4px;
+    margin: 8px;
+
+    
+
+    border-radius: 10px;
+}
+.menu {
+    display: flex;
+}
+
+.menu li {
+    letter-spacing: 3px;
+    margin-left: 30px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.664);
+    padding: 15px 20px;
+    transition: 0.3s;
+
+   
+}
+
+.menu li a:hover {
+    background-color: var(--verde-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.link {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+    font-style: italic;
+    font-size: 1.2em;
+     color: white;
+    text-align: center;
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.719);
+}
+
+.p1 {
+    line-height: 1.5em;
+}
+
+.p2 {
+    padding-top: 30px;
+}
+
+.p2 a {
+    color: white;
+    border: 3px solid var(--verde0-color);
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.p2 a:hover {
+    border: 3px solid var(--verde-light-color);
+    transition: 0.3s;
+}
+
+
+.slogan {
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    font-style: italic;
+
+    text-align: center;
+    font-size: 1.2em;
+
+    transition-delay: 0.3s;
+}
+
+.slogan01 {
+    font-size: 2em;
+    text-shadow: 7px 7px 10px black;
+}
+
+.slogan02 {
+    color: var(--verde-color);
+    font-weight: bolder;
+    font-size: 3em;
+    text-shadow: 7px 7px 10px black;
+}
+
+main {
+    height: 100%;
+    background-color: white;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 50px;
+    
+}
+
+.cards article {
+    position: relative;
+    top: 8vh;
+    transition: 0.3s ease;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cards article:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+    transition: 0.3s ease;
+}
+
+.cards .card01 {
+    background: url('../imagens/fundos/fundo-en.jpg') no-repeat center center;
+    background-size: cover;
+    height: 75vh;
+}
+
+.cards .card02 {
+    background: url('../imagens/fundos/fundo-fr.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.cards .card03 {
+    background: url('../imagens/fundos/fundo-esp.jpg') no-repeat center center;
+    background-size: cover;
+    
+}
+
+.cards article div.imagem01 {
+    text-align: center;
+    background-color: var(--fundo-cards);
+    padding: 20px;
+    border-radius: 5px;
+
+    transition: 0.6s;
+}
+
+article:hover .imagem01 {
+    background: url('../imagens/fundos/fundo01.jpg') no-repeat center center;
+    background-size: cover;
+
+    transition: 0.7s;
+}
+
+.cards article div.imagem02 {
+    text-align: center;
+    background-color: var(--fundo-cards);
+    padding: 25px;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+article:hover .imagem02 {
+    background: url('../imagens/fundos/fundo02.jpg') no-repeat center center;
+    background-size: cover;
+
+    transition: 0.3s;
+}
+
+.cards article div.imagem03 {
+    text-align: center;
+    background-color: var(--fundo-cards);
+    padding: 29px;
+    border-radius: 5px;
+
+    transition: 0.3s ease;
+
+}
+
+article:hover .imagem03 {
+    background: url('../imagens/fundos/fundo03.jpg') no-repeat center center;
+    background-size: cover;
+
+    transition: 0.3s ease;
+}
+
+.fundo01 {
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 10px;
+    height: 75vh;
+}
+
+.fundo02 {
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 18px;
+}
+
+.fundo03 {
+    background-color: rgba(0, 0, 0, 0.781);
+    padding: 25px;
+}
+
+.texto h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.texto {
+    width: 250px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5em;
+
+    transform: translateY(90%);
+    transition: transform 700ms ease;
+    transition-delay: 500ms;
+    
+}
+
+article:hover .texto {
+    transform: translateY(0);
+    transition-delay: 500ms;
+    
+}
+
+.texto > *:not(h2) {
+    opacity: 0;
+    transition: opacity 700ms linear ;
+}
+
+article:hover .texto > *:not(h2) {
+    opacity: 1;
+    transition: 1000ms linear ;
+}
+
+#texto01 {
+    width: 250px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5em;
+
+    transform: translateY(105%);
+    transition: transform 700ms ease;
+    transition-delay: 500ms;
+
+}
+
+#texto01 h2 {
+    position: relative;
+    top: -10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    font-style: italic;
+}
+
+article:hover #texto01 {
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+#texto > *:not(h2) {
+    opacity: 0;
+    transition: opacity 700ms linear ;
+}
+
+article:hover #texto > *:not(h2) {
+    opacity: 1;
+    transition: 1000ms linear ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: rgb(197, 25, 25);
+    color: aliceblue;
+}
+
+@media (max-width: 1000px) {
+    .menu-button {
+        display: block;
+
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 70vw;
+        height: 92vh;
+        align-items: center;
+        
+        background-image: linear-gradient(to bottom, var(--verde-main-color), var(--verde-color));
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .menu li {
+        margin: 30px;
+    }
+
+    .menu li a {
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
+       
+    }
+
+    .menu li a:hover {
+        
+    }
+
+    .menu li:last-child {
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        text-align: center;
+        
+        background-color: brown;
+        padding: 10px;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    
+       
+        
+    }
+
+    .cards article {
+        margin-bottom: 50px;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .link {
+        font-size: 0.9em;
+       
+    }
+
+    .slogan {
+        position: absolute;
+        top: 20%;
+    }
+    .slogan01 {
+        font-size: 1.5em;
+    }
+
+    .slogan02 {
+        font-size: 2em;
+    }
+}
+@media (max-width: 670px) {
+    
+    .link {
+        font-size: 0.8em;
+    }
+    .slogan {
+        font-size: 0.9em;
+    }
+
+    .cards .card01 {
+        height: 60vh;
+    }
+
+    .fundo01 {
+        
+        height: 60vh;
+    }
+}
+
+.show-menu {
+    transform: translateX(0);
+}
+
+.slogan-hidden {
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.link-hidden {
+    opacity: 0;
+    transition: 0.1s;
+}
