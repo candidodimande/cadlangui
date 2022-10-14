@@ -447,13 +447,13 @@ footer {
 }
 
 @media (max-width: 500px){
-    .cards .card01 {
+   /* .cards .card01 {
         height: 65vh;
     }
 
     .fundo01 {
         height: 65vh;
-    }
+    } */
 
     #texto01 {
         transform: translateY(96%);
