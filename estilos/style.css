@@ -185,7 +185,7 @@ main {
 .cards .card01 {
     background: url('../imagens/fundos/fundo-en.jpg') no-repeat center center;
     background-size: cover;
-    height: 75vh;
+    
 }
 
 .cards .card02 {
@@ -251,7 +251,7 @@ article:hover .imagem03 {
 .fundo01 {
     background-color: rgba(0, 0, 0, 0.781);
     padding: 10px;
-    height: 75vh;
+    
 }
 
 .fundo02 {
